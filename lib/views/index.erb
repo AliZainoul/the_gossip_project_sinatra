@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>The Gossip Project</title>
+  </head>
+  <body>
+    <h1>Mon super site de gossip, depuis le dossier views !</h1>
+    <h1>Bientôt vous allez pouvoir créer des gossips sympatiques, en attendant, via le lien ci-dessous, vous pourriez remplir un formulaire afin de créer d'ores et déja des gossips. Stay Tuned !</h1>
+    <h1><a href="/gossips/new/">http://localhost:4567/gossips/new/</a></h1>
+  </body>
+</html>
+
+<% gossips.each_with_index do |gossip,index| %>
+        <p>
+          <%= gossip.author %><br/>
+          <%= gossip.content %><br/>
+          <a href="/gossips/<%=index%>/"> Gossip Page Link </a>
+        </p>
+<% end %>

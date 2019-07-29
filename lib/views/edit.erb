@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <title>Edite un potin</title>
+  </head>
+  <body>
+    <h1>Edit un potin !</h1>
+    <p>Balance ton nouveau potin via le formulaire ci-dessous</p>
+    <form action='/gossips/<%=id%>/edit/' method='POST'>
+      Saisi ici ton nom :  <input type="text" class="form-control" id="formGroupExampleInput" name='gossip_author' value="<%=gossip.author %>" required>
+      Balance ton potin : <input type="text" class="form-control" id="formGroupExampleInput2" name='gossip_content' value="<%=gossip.content %>" required>
+      <input type='submit'/>
+    </form>
+  </body>
+</html>
